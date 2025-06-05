@@ -28,8 +28,7 @@ namespace ReqnrollProject.StepDefinitions
         [Given("User is on the orangehrm login page")]
         public void GivenUserIsOnTheOrangehrmLoginPage()
         {;
-            Log.Info("Opening the application in the browser");
-           
+            Log.Info("Opening the application in the browser"); 
             lp.launchbrowser();
             Thread.Sleep(2000);
         }

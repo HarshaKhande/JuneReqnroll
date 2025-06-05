@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VGDZ9XxsYOA=",
+  "dgSpecHash": "tYkLDL6SjTM=",
   "success": true,
   "projectFilePath": "C:\\Users\\Harsha Patil\\source\\repos\\ReqnrollProject\\ReqnrollProject\\ReqnrollProject.csproj",
   "expectedPackageFiles": [
@@ -102,9 +102,9 @@
     "C:\\Users\\Harsha Patil\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512",
     "C:\\Users\\Harsha Patil\\.nuget\\packages\\utf8json\\1.3.7\\utf8json.1.3.7.nupkg.sha512",
     "C:\\Users\\Harsha Patil\\.nuget\\packages\\webdrivermanager\\2.17.5\\webdrivermanager.2.17.5.nupkg.sha512",
-    "C:\\Users\\Harsha Patil\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Harsha Patil\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
     "C:\\Users\\Harsha Patil\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\Harsha Patil\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512"
+    "C:\\Users\\Harsha Patil\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": [
     {

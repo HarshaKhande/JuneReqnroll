@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[4.5.0, )"
             },
+            "Reqnroll": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
             "Reqnroll.NUnit": {
               "target": "Package",
               "version": "[2.2.1, )"
