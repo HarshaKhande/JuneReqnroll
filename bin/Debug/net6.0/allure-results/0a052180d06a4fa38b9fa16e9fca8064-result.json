@@ -1,0 +1,147 @@
+{
+  "uuid": "0f8bcf71-9f94-4aab-ba6d-1ba132f94f2b",
+  "historyId": "3a8335ac69939f2bb4624dce02b7c683",
+  "testCaseId": "7efa1c86013b6d6403281909b7f69773",
+  "fullName": "ReqnrollProject/Features/Login/Verify login with data table  parameters",
+  "labels": [
+    {
+      "name": "host",
+      "value": "LAPTOP-AVB2L64G"
+    },
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "Reqnroll"
+    },
+    {
+      "name": "package",
+      "value": "Features.Login"
+    },
+    {
+      "name": "feature",
+      "value": "Login"
+    },
+    {
+      "name": "tag",
+      "value": "Sanity"
+    }
+  ],
+  "links": [],
+  "name": "Verify login with data table  parameters",
+  "status": "broken",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "The process cannot access the file 'C:\\Users\\Harsha Patil\\source\\repos\\ReqnrollProject\\ReqnrollProject\\bin\\Debug\\net6.0\\TestLog.txt' because it is being used by another process.",
+    "trace": "System.IO.IOException: The process cannot access the file 'C:\\Users\\Harsha Patil\\source\\repos\\ReqnrollProject\\ReqnrollProject\\bin\\Debug\\net6.0\\TestLog.txt' because it is being used by another process.\r\n   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)\r\n   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.StreamWriter.ValidateArgsAndOpenPath(String path, Boolean append, Encoding encoding, Int32 bufferSize)\r\n   at System.IO.File.AppendAllText(String path, String contents)\r\n   at ReqnrollProject.Utilities.Log.Info(String message) in C:\\Users\\Harsha Patil\\source\\repos\\ReqnrollProject\\ReqnrollProject\\Utilities\\Log.cs:line 16\r\n   at ReqnrollProject.StepDefinitions.LoginStepDefinitions.GivenUserIsOnTheOrangehrmLoginPage() in C:\\Users\\Harsha Patil\\source\\repos\\ReqnrollProject\\ReqnrollProject\\StepDefinitions\\LoginStepDefinitions.cs:line 29\r\n--- End of stack trace from previous location ---\r\n   at Reqnroll.Bindings.BindingInvoker.InvokeBindingAsync(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, DurationHolder durationHolder)\r\n   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)\r\n   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)\r\n   at Reqnroll.Infrastructure.TestExecutionEngine.OnAfterLastStepAsync()\r\n   at Reqnroll.TestRunner.CollectScenarioErrorsAsync()\r\n   at Allure.ReqnrollPlugin.SelectiveRun.TestPlanAwareTestRunner.CollectScenarioErrorsAsync()\r\n   at ReqnrollProject.Features.LoginFeature.ScenarioCleanupAsync()\r\n   at ReqnrollProject.Features.LoginFeature.VerifyLoginWithDataTableParameters(String username, String password, String[] exampleTags) in C:\\Users\\Harsha Patil\\source\\repos\\ReqnrollProject\\ReqnrollProject\\Features\\Login.feature:line 37\r\n   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()\r\n   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(Func`1 invoke)\r\n   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)\r\n   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)\r\n   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()\r\n   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given User is on the orangehrm login page",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "The process cannot access the file 'C:\\Users\\Harsha Patil\\source\\repos\\ReqnrollProject\\ReqnrollProject\\bin\\Debug\\net6.0\\TestLog.txt' because it is being used by another process.",
+        "trace": "System.IO.IOException: The process cannot access the file 'C:\\Users\\Harsha Patil\\source\\repos\\ReqnrollProject\\ReqnrollProject\\bin\\Debug\\net6.0\\TestLog.txt' because it is being used by another process.\r\n   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)\r\n   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)\r\n   at System.IO.StreamWriter.ValidateArgsAndOpenPath(String path, Boolean append, Encoding encoding, Int32 bufferSize)\r\n   at System.IO.File.AppendAllText(String path, String contents)\r\n   at ReqnrollProject.Utilities.Log.Info(String message) in C:\\Users\\Harsha Patil\\source\\repos\\ReqnrollProject\\ReqnrollProject\\Utilities\\Log.cs:line 16\r\n   at ReqnrollProject.StepDefinitions.LoginStepDefinitions.GivenUserIsOnTheOrangehrmLoginPage() in C:\\Users\\Harsha Patil\\source\\repos\\ReqnrollProject\\ReqnrollProject\\StepDefinitions\\LoginStepDefinitions.cs:line 29\r\n--- End of stack trace from previous location ---\r\n   at Reqnroll.Bindings.BindingInvoker.InvokeBindingAsync(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, DurationHolder durationHolder)\r\n   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepMatchAsync(BindingMatch match, Object[] arguments, DurationHolder durationHolder)\r\n   at Reqnroll.Infrastructure.TestExecutionEngine.ExecuteStepAsync(IContextManager contextManager, StepInstance stepInstance)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749104587147,
+      "stop": 1749104587402
+    },
+    {
+      "name": "When User enters the \"Adm\" and \"an\" in the input fields",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749104587402,
+      "stop": 1749104587403
+    },
+    {
+      "name": "When User clicks on submit button",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749104587403,
+      "stop": 1749104587403
+    },
+    {
+      "name": "Then User is navigated to home page",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749104587403,
+      "stop": 1749104587403
+    },
+    {
+      "name": "Then User selected city and country information",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Data Table",
+          "source": "424258b5-bd99-4e5e-82aa-f3d30cfd7c4e-attachment.csv",
+          "type": "text/csv"
+        }
+      ],
+      "parameters": [],
+      "start": 1749104587582,
+      "stop": 1749104587617
+    }
+  ],
+  "attachments": [],
+  "parameters": [
+    {
+      "name": "username",
+      "value": "\"Adm\"",
+      "excluded": false
+    },
+    {
+      "name": "password",
+      "value": "\"an\"",
+      "excluded": false
+    }
+  ],
+  "start": 1749104587147,
+  "stop": 1749104587623
+}

@@ -1,0 +1,110 @@
+{
+  "uuid": "76bd5946-5ac3-4d46-91bb-d75ed5894e87",
+  "historyId": "1f50496ac1d2f6312b1b39dd41a3fe06",
+  "testCaseId": "1b286657ba5df054fe8077133eedc133",
+  "fullName": "ReqnrollProject/Features/Login/Verify login with valid credentails",
+  "labels": [
+    {
+      "name": "host",
+      "value": "LAPTOP-AVB2L64G"
+    },
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "Reqnroll"
+    },
+    {
+      "name": "package",
+      "value": "Features.Login"
+    },
+    {
+      "name": "feature",
+      "value": "Login"
+    },
+    {
+      "name": "tag",
+      "value": "Regression,"
+    },
+    {
+      "name": "tag",
+      "value": "Functional"
+    }
+  ],
+  "links": [],
+  "name": "Verify login with valid credentails",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given User is on the orangehrm login page",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749094955962,
+      "stop": 1749094960927
+    },
+    {
+      "name": "When User enters the username \"Admin\" and password \"admin123\" in the text fields",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749094960927,
+      "stop": 1749094961061
+    },
+    {
+      "name": "When User clicks on submit button",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749094961061,
+      "stop": 1749094962202
+    },
+    {
+      "name": "Then User is navigated to home page",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1749094962202,
+      "stop": 1749094965233
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1749094955962,
+  "stop": 1749094965233
+}
