@@ -35,8 +35,16 @@ namespace ReqnrollProject.Hooks
             // IWebDriver driver = new FirefoxDriver();
             // _context["WebDriver"] = driver;
 
-            _context.Driver = new EdgeDriver();
+            
+            var options = new EdgeOptions();
+            options.AddArgument("--headless=new");
+            options.AddArgument("--no-sandbox");
+            options.AddArgument("--disable-dev-shm-usage");
+
+            _context.Driver = new EdgeDriver(options);
+
             _context.Driver.Manage().Window.Maximize();
+
 
         }
 
