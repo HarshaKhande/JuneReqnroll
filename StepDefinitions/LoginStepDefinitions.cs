@@ -37,7 +37,7 @@ namespace ReqnrollProject.StepDefinitions
         public void WhenUserEntersTheUsernameAndPasswordInTheTextFields(string username, string password)
         {
 
-            Log.Info("Entering the username nd password");
+           
             lp.enterusernamepass(username, password);
         }
 
