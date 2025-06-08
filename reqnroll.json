@@ -1,0 +1,16 @@
+{
+  "language": {
+    "feature": "en"
+  },
+  "stepAssemblies": [
+    { "assembly": "ReqnrollProject" }
+  ],
+  "plugins": [
+    {
+      "name": "Reqnroll.Plugins.Reports",
+      "parameters": {
+        "generateHtmlReport": true
+      }
+    }
+  ]
+}

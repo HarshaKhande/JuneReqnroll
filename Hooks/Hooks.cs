@@ -9,8 +9,9 @@ using WebDriverManager.DriverConfigs.Impl;
 using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
+using ReqnrollProject.Utilities;
 
-namespace ReqnrollProject.Utilities
+namespace ReqnrollProject.Hooks
 {
     [Binding]
     internal class Hooks
@@ -31,8 +32,8 @@ namespace ReqnrollProject.Utilities
 
             Console.WriteLine("Running before every scenario");
             new WebDriverManager.DriverManager().SetUpDriver(new EdgeConfig());
-           // IWebDriver driver = new FirefoxDriver();
-           // _context["WebDriver"] = driver;
+            // IWebDriver driver = new FirefoxDriver();
+            // _context["WebDriver"] = driver;
 
             _context.Driver = new EdgeDriver();
             _context.Driver.Manage().Window.Maximize();
