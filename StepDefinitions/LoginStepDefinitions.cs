@@ -12,7 +12,8 @@ using ReqnrollProject.Utilities;
 namespace ReqnrollProject.StepDefinitions
 {
 
-
+    [AllureNUnit]
+    [AllureSuite("Login Feature")]
     [Binding]
     public class LoginStepDefinitions
     {
@@ -25,6 +26,10 @@ namespace ReqnrollProject.StepDefinitions
             lp = new LoginPage(context.Driver);
         }
 
+        
+        [Test]
+        [AllureSeverity(SeverityLevel.normal)]
+        [AllureSuite("Login Feature")]
         [Given("User is on the orangehrm login page")]
         public void GivenUserIsOnTheOrangehrmLoginPage()
         {;
@@ -33,6 +38,10 @@ namespace ReqnrollProject.StepDefinitions
             Thread.Sleep(2000);
         }
 
+        
+        [Test]
+        [AllureSeverity(SeverityLevel.normal)]
+        [AllureSuite("Login Feature")]
         [When("User enters the username {string} and password {string} in the text fields")]
         public void WhenUserEntersTheUsernameAndPasswordInTheTextFields(string username, string password)
         {
@@ -42,12 +51,20 @@ namespace ReqnrollProject.StepDefinitions
         }
 
 
+        
+        [Test]
+        [AllureSeverity(SeverityLevel.normal)]
+        [AllureSuite("Login Feature")]
         [When("User clicks on submit button")]
         public void WhenUserClicksOnSubmitButton()
         {
            lp.submit();
         }
 
+        
+        [Test]
+        [AllureSeverity(SeverityLevel.normal)]
+        [AllureSuite("Login Feature")]
         [Then("User is navigated to home page")]
         public void ThenUserIsNavigatedToHomePage()
         {
@@ -55,6 +72,10 @@ namespace ReqnrollProject.StepDefinitions
         }
 
 
+        
+        [Test]
+        [AllureSeverity(SeverityLevel.normal)]
+        [AllureSuite("Login Feature")]
         [When("User enters the {string} and {string} in the input fields")]
         public void WhenUserEntersTheAndInTheInputFields(string admin, string p1)
         {
@@ -63,6 +84,10 @@ namespace ReqnrollProject.StepDefinitions
         }
 
 
+        
+        [Test]
+        [AllureSeverity(SeverityLevel.normal)]
+        [AllureSuite("Login Feature")]
         [Then("User selected city and country information")]
         public void ThenUserSelectedCityAndCountryInformation(DataTable dataTable)
         {
