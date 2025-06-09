@@ -29,7 +29,7 @@ namespace ReqnrollProject.Drivers
             [BeforeScenario]
             public void InitializeWebDriver()
             {
-                _driver = new EdgeDriver();
+                _driver = new ChromeDriver();
                 _driver.Manage().Window.Maximize();
                 _container.RegisterInstanceAs<IWebDriver>(_driver);
             }
