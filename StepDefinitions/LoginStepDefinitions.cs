@@ -7,7 +7,9 @@ using OpenQA.Selenium;
 using Reqnroll;
 using Reqnroll.UnitTestProvider;
 using ReqnrollProject.Pages;
-using ReqnrollProject.Utilities;
+using Allure.Commons;
+using NUnit.Allure.Attributes;
+using NUnit.Allure.Core;
 
 namespace ReqnrollProject.StepDefinitions
 {
