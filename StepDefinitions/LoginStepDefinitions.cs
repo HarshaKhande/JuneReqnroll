@@ -43,7 +43,7 @@ namespace ReqnrollProject.StepDefinitions
         
         [Test]
         [AllureSeverity(SeverityLevel.normal)]
-        [Allure.NUnit.Attributes.AllureSuite("Login Suite")]]
+        [Allure.NUnit.Attributes.AllureSuite("Login Suite")]
         [When("User enters the username {string} and password {string} in the text fields")]
         public void WhenUserEntersTheUsernameAndPasswordInTheTextFields(string username, string password)
         {
