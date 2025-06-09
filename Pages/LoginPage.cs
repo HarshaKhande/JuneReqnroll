@@ -14,7 +14,7 @@ namespace ReqnrollProject.Pages
 {
 
 
-    internal class LoginPage
+    public class LoginPage
     {
 
 
