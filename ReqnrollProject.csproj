@@ -17,7 +17,7 @@
     <PackageReference Include="WebDriverManager" Version="2.17.5" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.3.42" />
   <PackageReference Include="Allure.NUnit" Version="2.12.1" />
-  <PackageReference Include="Allure.Commons" Version="2.13.9" />
+
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +27,10 @@
 
 <ItemGroup>
   <PackageReference Include="Reqnroll.Tools.MsBuild.Generation" Version="*" PrivateAssets="All" />
+</ItemGroup>
+
+<ItemGroup>
+  <PackageReference Include="Allure.Commons" Version="2.13.10" />
 </ItemGroup>
 
 <PropertyGroup>
