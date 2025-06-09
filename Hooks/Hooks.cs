@@ -1,4 +1,4 @@
-﻿using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -10,21 +10,34 @@ using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using ReqnrollProject.Utilities;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using Reqnroll.BoDi;
+
 
 namespace ReqnrollProject.Hooks
 {
     [Binding]
-    internal class Hooks
+    public  class Hooks
     {
 
         // private readonly ScenarioContext _scenarioContext;
 
-        private readonly DriverContext _context;
+        // private readonly DriverContext _context;
 
-        public Hooks(DriverContext context)
+        // public Hooks(DriverContext context)
+        // {
+        //   _context = context;
+        // }
+
+        private readonly IObjectContainer _container;
+        private IWebDriver _driver;
+
+        public Hooks(IObjectContainer container)
         {
-            _context = context;
+            _container = container;
         }
+
 
         [BeforeScenario]
         public void Setup()
@@ -35,16 +48,14 @@ namespace ReqnrollProject.Hooks
             // IWebDriver driver = new FirefoxDriver();
             // _context["WebDriver"] = driver;
 
-            
             var options = new EdgeOptions();
             options.AddArgument("--headless=new");
             options.AddArgument("--no-sandbox");
             options.AddArgument("--disable-dev-shm-usage");
 
-            _context.Driver = new EdgeDriver(options);
+            _driver = new EdgeDriver(options);
 
-            _context.Driver.Manage().Window.Maximize();
-
+            _driver.Manage().Window.Maximize();
 
         }
 
@@ -52,7 +63,7 @@ namespace ReqnrollProject.Hooks
         public void TearDown()
         {
 
-            _context.Driver.Quit();
+            _driver.Quit();
         }
 
         [BeforeTestRun]
