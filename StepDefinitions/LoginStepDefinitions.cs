@@ -1,83 +1,76 @@
 using System;
 using System.Drawing;
 using Allure.Net.Commons;
+using Allure.NUnit;
 using Allure.NUnit.Attributes;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using Reqnroll;
 using Reqnroll.UnitTestProvider;
 using ReqnrollProject.Pages;
-using Allure.Commons;
-using NUnit.Allure.Attributes;
-using NUnit.Allure.Core;
+using ReqnrollProject.Utilities;
 
 namespace ReqnrollProject.StepDefinitions
 {
 
+
     [AllureNUnit]
-    [Allure.NUnit.Attributes.AllureSuite("Login Suite")]
+    [AllureSuite("Login Feature")]
     [Binding]
     public class LoginStepDefinitions
     {
 
 
-        private readonly LoginPage lp;
+        private readonly LoginPage _loginPage;
 
-        public LoginStepDefinitions(DriverContext context)
+        public LoginStepDefinitions(LoginPage loginPage)
         {
-            lp = new LoginPage(context.Driver);
+            _loginPage = loginPage;
         }
 
-        
         [Test]
         [AllureSeverity(SeverityLevel.normal)]
-        [Allure.NUnit.Attributes.AllureSuite("Login Suite")]
+        [AllureSuite("Login Feature")]
         [Given("User is on the orangehrm login page")]
         public void GivenUserIsOnTheOrangehrmLoginPage()
-        {;
-        
-            lp.launchbrowser();
+        {
+            Log.Info("Opening the application in the browser");
+            _loginPage.launchbrowser();
             Thread.Sleep(2000);
         }
 
-        
         [Test]
         [AllureSeverity(SeverityLevel.normal)]
-        [Allure.NUnit.Attributes.AllureSuite("Login Suite")]
+        [AllureSuite("Login Feature")]
         [When("User enters the username {string} and password {string} in the text fields")]
         public void WhenUserEntersTheUsernameAndPasswordInTheTextFields(string username, string password)
         {
 
-           
-            lp.enterusernamepass(username, password);
+            Log.Info("Entering the username nd password");
+            _loginPage.enterusernamepass(username, password);
         }
 
-
-        
         [Test]
         [AllureSeverity(SeverityLevel.normal)]
-        [Allure.NUnit.Attributes.AllureSuite("Login Suite")]
+        [AllureSuite("Login Feature")]
         [When("User clicks on submit button")]
         public void WhenUserClicksOnSubmitButton()
         {
-           lp.submit();
+            _loginPage.submit();
         }
 
-        
         [Test]
         [AllureSeverity(SeverityLevel.normal)]
-        [Allure.NUnit.Attributes.AllureSuite("Login Suite")]        
+        [AllureSuite("Login Feature")]
         [Then("User is navigated to home page")]
         public void ThenUserIsNavigatedToHomePage()
         {
-            lp.homepagedisplay();
+            _loginPage.homepagedisplay();
         }
 
-
-        
         [Test]
         [AllureSeverity(SeverityLevel.normal)]
-        [Allure.NUnit.Attributes.AllureSuite("Login Suite")]
+        [AllureSuite("Login Feature")]
         [When("User enters the {string} and {string} in the input fields")]
         public void WhenUserEntersTheAndInTheInputFields(string admin, string p1)
         {
@@ -85,11 +78,9 @@ namespace ReqnrollProject.StepDefinitions
 
         }
 
-
-        
         [Test]
         [AllureSeverity(SeverityLevel.normal)]
-        [Allure.NUnit.Attributes.AllureSuite("Login Suite")]
+        [AllureSuite("Login Feature")]
         [Then("User selected city and country information")]
         public void ThenUserSelectedCityAndCountryInformation(DataTable dataTable)
         {
