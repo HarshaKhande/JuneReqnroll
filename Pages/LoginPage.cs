@@ -13,8 +13,7 @@ using System.Threading.Tasks;
 namespace ReqnrollProject.Pages
 {
 
-    [AllureNUnit]
-    [AllureSuite("Login Feature")]
+
     internal class LoginPage
     {
 
@@ -43,9 +42,6 @@ namespace ReqnrollProject.Pages
 
         // laucnh browser 
 
-        [Test]
-        [AllureSeverity(SeverityLevel.normal)]
-        [AllureSuite("Login Feature")]
         public void launchbrowser()
         {
 
@@ -56,9 +52,7 @@ namespace ReqnrollProject.Pages
 
 
         // enter username and password 
-        [Test]
-        [AllureSeverity(SeverityLevel.normal)]
-        [AllureSuite("Login Feature")]
+   
         public void enterusernamepass(String username, String password)
         {
 
@@ -69,18 +63,14 @@ namespace ReqnrollProject.Pages
 
 
         // submit method 
-        [Test]
-        [AllureSeverity(SeverityLevel.normal)]
-        [AllureSuite("Login Feature")]
+  
         public void submit()
         {
             _driver.FindElement(loginFormLocator).Click();
         }
 
         // home page is displayed 
-        [Test]
-        [AllureSeverity(SeverityLevel.normal)]
-        [AllureSuite("Login Feature")]
+    
         public void homepagedisplay()
         {
 
