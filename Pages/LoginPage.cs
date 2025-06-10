@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace ReqnrollProject.Pages
 {
 
-
+    [TestFixture]
     public class LoginPage
     {
 
