@@ -17,6 +17,7 @@ using Reqnroll.BoDi;
 
 namespace ReqnrollProject.Hooks
 {
+    [TestFixture]
     [Binding]
     public  class Hooks
     {
